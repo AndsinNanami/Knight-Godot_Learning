@@ -56,7 +56,7 @@ func _animation_control():
 	
 	#运动动画
 	if not death:
-		if direction == 0 and temp_2d._current_temperature < 2700:
+		if direction == 0 and temp_2d.current_temperature < 2700:
 			sprite.play("cold")
 		elif direction == 0:
 			sprite.play("idle")

@@ -6,7 +6,7 @@ var direction = 1
 @onready var ray_cast_right = $RayCastRight
 @onready var sprite = $AnimatedSprite2D
 
-func _process(delta):
+func _physics_process(delta):
 	if ray_cast_right.is_colliding():
 		direction=-1
 		sprite.flip_h=true

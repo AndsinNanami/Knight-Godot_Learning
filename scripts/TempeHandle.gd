@@ -12,7 +12,7 @@ func _ready():
 	self.area_exited.connect(enter_obj_delete)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _physics_process(delta):
 	if not _insert_bodys.is_empty():
 		for body in _insert_bodys:
 			body.set_temperature(self)
