@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://c05ej1davbrg4"]
-
-[ext_resource type="Script" path="res://scripts/TempeHandle.gd" id="1_u5knk"]
-
-[node name="TempeHandle" type="Area2D"]
-collision_mask = 4
-script = ExtResource("1_u5knk")
