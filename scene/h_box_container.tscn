@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvbk5q7nkmuhs"]
+
+[ext_resource type="Script" path="res://script/HBoxContainer.gd" id="1_ifpya"]
+
+[node name="HBoxContainer" type="HBoxContainer"]
+custom_minimum_size = Vector2(18, 18)
+offset_right = 15.0
+offset_bottom = 14.0
+theme_override_constants/separation = 50
+script = ExtResource("1_ifpya")

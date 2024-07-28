@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbye4ji5ht2m4"]
+
+[ext_resource type="Texture2D" uid="uid://bghx35vpda6k1" path="res://asset/sprites/Hearts/PNG/basic/heart.png" id="1_583ae"]
+[ext_resource type="Texture2D" uid="uid://cpfbr7wwyfme4" path="res://asset/sprites/Hearts/PNG/basic/border.png" id="1_pxyvg"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xr6uu"]
+texture = ExtResource("1_pxyvg")
+draw_center = false
+
+[node name="HeartGUI" type="Panel"]
+custom_minimum_size = Vector2(18, 18)
+offset_left = 1.0
+offset_right = 51.0
+offset_bottom = 50.0
+size_flags_stretch_ratio = 0.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_xr6uu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(25.1875, 27)
+scale = Vector2(2.91912, 3.17647)
+texture = ExtResource("1_583ae")

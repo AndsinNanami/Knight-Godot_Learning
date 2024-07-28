@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dp41pd2p6lcga"]
+
+[ext_resource type="Script" path="res://script/temperature2D.gd" id="1_0j78p"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0nkvo"]
+radius = 5.09902
+
+[node name="CollisionShape2D" type="CollisionShape2D"]
+shape = SubResource("CircleShape2D_0nkvo")
+debug_color = Color(0.736927, 0.432428, 0.125928, 0.42)
+script = ExtResource("1_0j78p")

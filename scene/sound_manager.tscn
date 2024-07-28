@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://c7v7rq6uoxkny"]
+
+[ext_resource type="Script" path="res://script/sound_manager.gd" id="1_kd0es"]
+[ext_resource type="AudioStream" uid="uid://sx30reyfrpt0" path="res://asset/sounds/jump.wav" id="1_s4pno"]
+[ext_resource type="AudioStream" uid="uid://c42qo2vdrv1kn" path="res://asset/sounds/hurt.wav" id="2_fhard"]
+[ext_resource type="AudioStream" uid="uid://btlihi514em5a" path="res://asset/sounds/power_up.wav" id="3_x0jdf"]
+[ext_resource type="AudioStream" uid="uid://bkjlv0v5v3jrh" path="res://asset/music/time_for_adventure.mp3" id="5_bhluh"]
+
+[node name="SoundManager" type="Node"]
+script = ExtResource("1_kd0es")
+
+[node name="SFX" type="Node" parent="."]
+
+[node name="Jump" type="AudioStreamPlayer2D" parent="SFX"]
+stream = ExtResource("1_s4pno")
+
+[node name="Hurt" type="AudioStreamPlayer2D" parent="SFX"]
+stream = ExtResource("2_fhard")
+
+[node name="Firing" type="AudioStreamPlayer2D" parent="SFX"]
+stream = ExtResource("3_x0jdf")
+
+[node name="bgm" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_bhluh")
+volume_db = 1.0
